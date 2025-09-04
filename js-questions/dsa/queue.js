@@ -1,7 +1,7 @@
 // DSA (Data Structures and Algorithms) concepts and implementations in JavaScript
 
-
 // Queue Implementation
+
 // theory: A queue is a linear data structure that follows the First In First Out (FIFO) principle. This means that the first element added to the queue will be the first one to be removed. Queues are commonly used in scenarios such as task scheduling, breadth-first search algorithms, and buffering data streams.
 
 class Queue {
