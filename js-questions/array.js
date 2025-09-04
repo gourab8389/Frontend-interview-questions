@@ -8,3 +8,49 @@ console.log(events) // output: 2,6,8
 
 const sort = array.sort();
 console.log(sort); // output: 2,3,5,6,8
+
+const sum = array.reduce((acc, n) => acc + n, 0);
+console.log(sum); // output: 24
+
+const find = array.find(n => n > 4);
+console.log(find); // output: 5
+
+const includes = array.includes(3);
+console.log(includes); // output: true
+
+const descArray = [...array].sort((a, b) => b - a);
+console.log(descArray); // output: 8,6,5,3,2
+
+const inscArray = [...array].sort((a, b) => a - b);
+console.log(inscArray); // output: 2,3,5,6,8
+
+const firstIndex = array.indexOf(5);
+console.log(firstIndex); // output: 2
+
+const lastIndex = [1,2,3,5,6,5,8].lastIndexOf(5);
+console.log(lastIndex); // output: 5
+
+const joinArray = array.join('-');
+console.log(joinArray); // output: 2-3-5-6-8
+
+const sliceArray = array.slice(1,4);
+console.log(sliceArray); // output: 3,5,6
+
+const spliceArray = [...array];
+spliceArray.splice(2,1,10);
+console.log(spliceArray); // output: 2,3,10,6,8
+
+const reverseArray = [...array].reverse();
+console.log(reverseArray); // output: 8,6,5,3,2
+
+const fillArray = new Array(5).fill(0);
+console.log(fillArray); // output: 0,0,0,0,0
+
+const concatArray = array.concat([10,12,14]);
+console.log(concatArray); // output: 2,3,5,6,8,10,12,14
+
+const flatArray = [[1,2],[3,4],[5]].flat();
+console.log(flatArray); // output: 1,2,3,4,5
+
+const arrayFrom = Array.from('hello');
+console.log(arrayFrom); // output: h,e,l,l,o
