@@ -48,3 +48,21 @@ console.log(paddedStartStr); // output: "005"
 
 const paddedEndStr = "5".padEnd(3, "0");
 console.log(paddedEndStr); // output: "500"
+
+const charCodeAtIndex = str.charCodeAt(0);
+console.log(charCodeAtIndex); // output: 72 (ASCII code for 'H')
+
+const fromCharCodeStr = String.fromCharCode(72, 101, 108, 108, 111);
+console.log(fromCharCodeStr); // output: "Hello"
+
+const localeCompareResult = "a".localeCompare("b");
+console.log(localeCompareResult); // output: -1 (because "a" comes before "b")
+
+const matchResult = "Hello, World!".match(/o/g);
+console.log(matchResult); // output: ["o", "o"]
+
+const searchResult = "Hello, World!".search(/World/);
+console.log(searchResult); // output: 7
+
+const concatStr = "Hello".concat(", ", "World", "!");
+console.log(concatStr); // output: "Hello, World!"
