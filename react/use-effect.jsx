@@ -21,6 +21,10 @@ const UseEffect = ({ userId }) => {
     fetchUser();
   }, [userId]);
 
+  useEffect(() => {
+    console.log("Data updated:", data);
+  }, [data]);
+
 
   if (loading) {
     return <div className="">Loading...</div>;
