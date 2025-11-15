@@ -34,6 +34,8 @@ const UseEffect = ({ userId }) => {
     <div>
       <span>{data.id}</span>
       <span>{data.name}</span>
+      <span>{data.email}</span>
+      <span>{data.phone}</span>
     </div>
   );
 };
