@@ -8,14 +8,14 @@ export default function Counter() {
   const increment = useCallback(() => {
     setCount((c) => c + 1);
   }, []);
-  const decriment = useCallback(() => {
+  const decrement = useCallback(() => {
     setCount((c) => c - 1);
   }, []);
   return (
     <div>
       <p>Count: {count}</p>
       <button onClick={increment}>Increment</button>
-        <button onClick={decriment}>Decrement</button>
+        <button onClick={decrement}>Decrement</button>
     </div>
   );
 }

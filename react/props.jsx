@@ -8,8 +8,8 @@ function App() {
     async function getMessage() {
       try {
         const response = await fetch(`/api/message`);
-        const message = await response.json();
-        setMessage(message);
+        const messageResponse = await response.json();
+        setMessage(messageResponse);
       } catch (error) {
         console.error(error.message);
       }

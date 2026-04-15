@@ -18,3 +18,12 @@ export default function PersistentValue() {
     </div>
   );
 }
+
+// output: react/use-ref.jsx
+// Component has rendered 0 times
+// [Increment Count Button]
+// Current Count: 0
+// After clicking the button once:
+// Component has rendered 1 times
+// [Increment Count Button]
+// Current Count: 1

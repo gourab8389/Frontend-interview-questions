@@ -1,5 +1,5 @@
 function example() {
-  var a = 1;        // Function scoped
+  var a = 1;        // Function scoped, hoisted: can be re-declared and updated
   let b = 2;        // Block scoped
   const c = 3;      // Block scoped, immutable
   

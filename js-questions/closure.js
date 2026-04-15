@@ -13,3 +13,5 @@ const counter =Counter();
 for (let i = 0; i < 5; i++) {
   console.log(counter());
 }
+
+// output: 1,2,3,4,5
